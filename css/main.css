@@ -18,18 +18,28 @@ html {
 }
 
 .border-line {
-  padding-bottom: .5em;
+  padding-bottom: .6em;
   bottom: -.7em;
   left: -3px;
   min-height: .7em;
-
   border: 3px solid #90ccc3;
   width: calc(100% + 6px)
 }
 
-.rocket:hover {
-  background-image: url("../images/rocket.svg");
-  /* transform: translate(0, 2em); */
+a {
+  transition: all linear .3s ease;
+}
+
+a:hover .border-line {
+  padding-bottom: 0;
+}
+
+i {
+  transition: all linear .3s ease;
+}
+
+a:hover i {
+  margin-top: -.5em;
 }
 
 .btn-ghost {
@@ -47,7 +57,7 @@ html {
 }
 
 .btn {
-  /* padding: 1em 2em 1em 2em; */
+  padding: .6em 1em .6em 1em;
   border-color: #90ccc3;
   border-bottom: 0;
   color: #90ccc3;
