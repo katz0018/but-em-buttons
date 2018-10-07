@@ -25,34 +25,20 @@ p:nth-child(2) {
 }
 
 .border-line {
-  min-height: .7em;
-  border: 3px solid #90ccc3;
-}
-
-a {
-  transition: all linear .3s ease;
-}
-
-.border-line {
   padding-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
   width: 100%;
+  transition: all linear .3s ease;
+  border: 1.5px solid #90ccc3;
 }
 
-i {
-  transition: all linear .3s ease;
+.btn-ghost:active .btn {
+  padding-bottom: .3em;
 }
 
 .box:hover .btn-ghost {
   background-color: rgba(180, 255, 244, .2);
   color: #b4fff4;
   border-color: #b4fff4;
-}
-
-.box:hover .icon {
-  transform: translateY(0 0 2em;);
 }
 
 .btn-ghost {
@@ -64,8 +50,8 @@ i {
 
 .btn {
   text-align: center;
-  padding: .6em 0;
+  padding: .6em 0 .8em;
   border-color: #90ccc3;
   color: #90ccc3;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 8px 8px 8px 8px;
 }
