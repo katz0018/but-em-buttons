@@ -42,6 +42,14 @@ a:hover i {
   margin-top: -.5em;
 }
 
+a:focus {
+
+}
+
+a:active {
+
+}
+
 .btn-ghost {
   border-color: #90ccc3;
   color: #90ccc3;
@@ -53,7 +61,6 @@ a:hover i {
   background-color: rgba(180, 255, 244, .2);
   border-color: #b4fff4;
   color: #b4fff4;
-  /* padding-bottom: 1em; */
 }
 
 .btn {
