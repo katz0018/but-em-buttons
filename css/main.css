@@ -4,9 +4,23 @@ html {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .content {
   text-align: center;
   color: #fff;
+  position: absolute;
+  top: 15em;
+}
+
+h1 {
+  text-shadow: 0 0 7px #fff;
+}
+
+p:nth-child(2) {
+  text-shadow: 0 0 7px #fff;
 }
 
 .rocket {
@@ -30,7 +44,7 @@ a {
   transition: all linear .3s ease;
 }
 
-a:hover .border-line {
+.border-line {
   padding-bottom: 0;
 }
 
@@ -38,16 +52,14 @@ i {
   transition: all linear .3s ease;
 }
 
-a:hover i {
-  margin-top: -.5em;
+.box:hover .btn-ghost {
+  background-color: rgba(180, 255, 244, .2);
+  color: #b4fff4;
+  border-color: #b4fff4;
 }
 
-a:focus {
-
-}
-
-a:active {
-
+.box:hover .icon {
+  transform: translateY(0 0 2em;);
 }
 
 .btn-ghost {
@@ -55,12 +67,6 @@ a:active {
   color: #90ccc3;
   background-color: none;
   text-decoration: none;
-}
-
-.btn:hover {
-  background-color: rgba(180, 255, 244, .2);
-  border-color: #b4fff4;
-  color: #b4fff4;
 }
 
 .btn {
