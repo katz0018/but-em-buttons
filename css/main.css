@@ -1,57 +1,42 @@
 html {
-  background-image: url("../images/starfield.png");
-  background-size: cover;
-  font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-main {
-  position: relative;
-}
-
-.content {
-  text-align: center;
+  font-family: "Ubuntu Condensed", sans-serif;
   color: #fff;
-  position: absolute;
-  top: 15em;
-  left: 15%;
-}
-
-h1 {
-  text-shadow: 0 0 7px #fff;
-}
-
-p:nth-child(2) {
-  text-shadow: 0 0 7px #fff;
-}
-
-.border-line {
-  padding-bottom: 0;
-  width: 100%;
-  transition: all linear .3s ease;
-  border: 1.5px solid #90ccc3;
-}
-
-.btn-ghost:active .btn {
-  padding-bottom: .3em;
-}
-
-.box:hover .btn-ghost {
-  background-color: rgba(180, 255, 244, .2);
-  color: #b4fff4;
-  border-color: #b4fff4;
 }
 
 .btn-ghost {
   border-color: #90ccc3;
-  color: #90ccc3;
-  background-color: none;
-  text-decoration: none;
+  border-bottom:0;
+  color: #b4fff4;
+  border-radius: 8px;
+  transition: all 200ms linear;
 }
 
-.btn {
-  text-align: center;
-  padding: .6em 0 .8em;
-  border-color: #90ccc3;
-  color: #90ccc3;
-  border-radius: 8px 8px 8px 8px;
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
+  background-color: rgba(180, 255, 244, .2);
+  border-color: #b4fff4;
+  color: #b4fff4;
+}
+
+.border-line {
+  width: 100%
+  padding: .4em;
+  left: 0;
+  bottom: -44px;
+  border-radius: 0 0 8px 8px;
+  border: 3px solid #b4fff4;
+}
+
+a:hover .border-line {
+  padding:.2em;
+}
+
+.starfield {
+  background-image: url("../images/starfield.png");
+}
+
+h2,
+p {
+  text-shadow: 0 0 30px rgba(255, 255, 255, .7);
 }
